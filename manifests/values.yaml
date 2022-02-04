@@ -1,4 +1,4 @@
-name: harness-example
+name: remote-manifests-harness-example
 replicas: 1
 
 image: ${artifact.metadata.image}
