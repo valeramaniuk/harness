@@ -1,3 +1,8 @@
+prowider "aws" {
+  profile = "default"
+  region  = "us-west-1"
+}
+
 resource "aws_sqs_queue" "terraform_queue" {
   name                      = "terraform-example-queue"
   delay_seconds             = 90
