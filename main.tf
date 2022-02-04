@@ -13,11 +13,7 @@ resource "aws_sqs_queue" "terraform_queue" {
     deadLetterTargetArn = aws_sqs_queue.terraform_queue_deadletter.arn
     maxReceiveCount     = 4
   })
-  redrive_allow_policy = jsonencode({
-    redrivePermission = "byQueue",
-    sourceQueueArns   = ["${aws_sqs_queue.terraform_queue_deadletter.arn}"]
-  })
-
+  
   tags = {
     Environment = "production"
   }
