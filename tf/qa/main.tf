@@ -26,5 +26,5 @@ resource "aws_s3_bucket" "b" {
 }
 
 output "bucket_name" {
-  value = aws_s3_bucket.b.name
+  value = aws_s3_bucket.b.bucket
 }
