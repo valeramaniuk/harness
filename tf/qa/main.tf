@@ -24,3 +24,7 @@ resource "aws_s3_bucket" "b" {
     Environment = "QA"
   }
 }
+
+output "bucket_name" {
+  value = aws_s3_bucket.b.name
+}
