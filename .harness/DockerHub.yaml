@@ -1,0 +1,14 @@
+connector:
+  name: DockerHub
+  identifier: DockerHub
+  description:
+  orgIdentifier: default
+  projectIdentifier: Deploy
+  type: DockerRegistry
+  spec:
+    dockerRegistryUrl: https://registry.hub.docker.com/v2/
+    providerType: DockerHub
+    auth:
+      type: Anonymous
+    delegateSelectors:
+    - next-gen-delegate
