@@ -34,6 +34,19 @@ pipeline:
                                                     paths:
                                                         - manifests
                                                     branch: main
+                                  - manifest:
+                                        identifier: k8Manifest
+                                        type: K8sManifest
+                                        spec:
+                                            store:
+                                                type: Github
+                                                spec:
+                                                    connectorRef: Personal_GH
+                                                    gitFetchType: Branch
+                                                    paths:
+                                                        - k8manifest
+                                                    branch: main
+                                            skipResourceVersioning: false
                               artifacts:
                                   primary:
                                       spec:
