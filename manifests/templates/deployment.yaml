@@ -64,4 +64,4 @@ spec:
         {{- end}}
         {{- end}}
         
-        command: ['sh', '-c', 'echo Container 1 is Running ; sleep 3600']
+        args: [/bin/sh, -c, 'while true; do echo "error: I'm an error. Nothig works (((("; sleep 1; done']
