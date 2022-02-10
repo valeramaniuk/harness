@@ -23,8 +23,8 @@ pipeline:
                                     value: evaluation
                               manifests:
                                   - manifest:
-                                        identifier: Eval
-                                        type: Values
+                                        identifier: K8Eval
+                                        type: K8sManifest
                                         spec:
                                             store:
                                                 type: Github
@@ -34,6 +34,7 @@ pipeline:
                                                     paths:
                                                         - manifests
                                                     branch: main
+                                            skipResourceVersioning: false
                               artifacts:
                                   primary:
                                       spec:
