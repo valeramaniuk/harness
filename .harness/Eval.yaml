@@ -32,7 +32,7 @@ pipeline:
                                                     connectorRef: Personal_GH
                                                     gitFetchType: Branch
                                                     paths:
-                                                        - manifests
+                                                        - manifests/values.yaml
                                                     branch: main
                                   - manifest:
                                         identifier: k8Manifest
@@ -44,7 +44,7 @@ pipeline:
                                                     connectorRef: Personal_GH
                                                     gitFetchType: Branch
                                                     paths:
-                                                        - k8manifest
+                                                        - manifests/deployment
                                                     branch: main
                                             skipResourceVersioning: false
                               artifacts:
