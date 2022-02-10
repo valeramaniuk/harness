@@ -44,7 +44,7 @@ pipeline:
                                                     connectorRef: Personal_GH
                                                     gitFetchType: Branch
                                                     paths:
-                                                        - manifests/deployment
+                                                        - manifests/templates/
                                                     branch: main
                                             skipResourceVersioning: false
                               artifacts:
