@@ -1,13 +1,11 @@
 name: remote-manifests-harness-example
 replicas: 1
-image: library/nginx
 
-# image: <+artifact.metadata.image>
-# dockercfg: <+artifact.source.dockerconfig>
+image: <+artifact.metadata.image>
+dockercfg: <+artifact.source.dockerconfig>
 
 createNamespace: true
-# namespace: <+infra.namespace>
-namespace: evaluation
+namespace: <+infra.namespace>
 
 
 # Service Type allow you to specify what kind of service you want.
