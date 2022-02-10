@@ -5,7 +5,9 @@ image: <+artifact.metadata.image>
 dockercfg: <+artifact.source.dockerconfig>
 
 createNamespace: true
-namespace: <+infra.namespace>
+# namespace: <+infra.namespace>
+namespace: evaluation
+
 
 # Service Type allow you to specify what kind of service you want.
 # Possible values for ServiceType are:
