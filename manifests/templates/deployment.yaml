@@ -63,3 +63,5 @@ spec:
             name: {{.Values.name}}
         {{- end}}
         {{- end}}
+        
+        command: ['sh', '-c', 'echo Container 1 is Running ; sleep 3600']
