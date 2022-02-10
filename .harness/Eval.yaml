@@ -36,7 +36,7 @@ pipeline:
                                   primary:
                                       spec:
                                           connectorRef: DockerHub
-                                          imagePath: nginx
+                                          imagePath: library/nginx
                                           tag: <+input>
                                       type: DockerRegistry
                   infrastructure:
