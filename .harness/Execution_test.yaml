@@ -1,0 +1,21 @@
+inputSet:
+  identifier: "Execution_test"
+  pipeline:
+    identifier: "Eval"
+    stages:
+    - stage:
+        identifier: "Deploy_Service"
+        type: "Deployment"
+        spec:
+          serviceConfig:
+            serviceDefinition:
+              type: "Kubernetes"
+              spec:
+                artifacts:
+                  primary:
+                    type: "DockerRegistry"
+                    spec:
+                      tag: "stable-alpine"
+  name: "Execution test"
+  orgIdentifier: "default"
+  projectIdentifier: "Deploy"
