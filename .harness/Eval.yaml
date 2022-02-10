@@ -23,8 +23,8 @@ pipeline:
                                     value: evaluation
                               manifests:
                                   - manifest:
-                                        identifier: K8Eval
-                                        type: K8sManifest
+                                        identifier: Eval
+                                        type: Values
                                         spec:
                                             store:
                                                 type: Github
@@ -32,9 +32,8 @@ pipeline:
                                                     connectorRef: Personal_GH
                                                     gitFetchType: Branch
                                                     paths:
-                                                        - manifests
+                                                        - manifests/
                                                     branch: main
-                                            skipResourceVersioning: false
                               artifacts:
                                   primary:
                                       spec:
