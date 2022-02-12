@@ -64,4 +64,4 @@ spec:
         {{- end}}
         {{- end}}
         
-        args: [/bin/sh, -c, 'while true; do echo "error: Im an error. Nothig works (((("; sleep 1; done; sleep 3600']
+        args: {{.Values.args}}
