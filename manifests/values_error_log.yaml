@@ -28,4 +28,4 @@ env:
   secrets:
     key2: value2
 
-logMsg: "ERROR: nothing works ((" 
+logMsg: Error
