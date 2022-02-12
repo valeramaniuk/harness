@@ -64,4 +64,4 @@ spec:
         {{- end}}
         {{- end}}
         
-        args: '{{.Values.args}}'
+        args: [/bin/sh, -c, 'while true; do echo {{ .Values.logMsg }}; sleep 1; done; sleep 3600']
