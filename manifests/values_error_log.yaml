@@ -28,4 +28,4 @@ env:
   secrets:
     key2: value2
 
-args: [/bin/sh, -c, 'while true; do echo "error: Im an error. Nothig works (((("; sleep 1; done; sleep 3600']
+logMsg: "ERROR: nothing works ((" 
